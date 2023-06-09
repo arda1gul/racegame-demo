@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/img/road.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f7f7f7;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    user-select: none;
+}
+
+.auto {
+    width: 400px;
+    transition: 3s;
+}
+
+.auto.left {
+    /* transform: rotate(-30deg); */
+    transition: 1s;
+    margin-right: 400px;
+}
+
+.auto.right {
+    /* transform: rotate(30deg); */
+    transition: 1s;
+    margin-left: 250px;
+}
+
+.auto.forward {
+    margin-bottom: 1500px;
+    transition: 4s;
+}
+
+.auto.back {
+    margin-top: 1500px;
+    transition: 5s;
+}
+
+
+.car {
+    width: 150px;
+    height: 30px;
+    float: left;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.choose {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    border-color: transparent;
+}
+
+.my-way{
+    position:absolute;
+    top:-900vh;
+    /* width:4vw; */
+    height:900vh;
+    margin:auto;
+    background:black;
+    border:2vw dashed white;
+}
+
+.chooseButton {
+    opacity: 1;
+}
+
+.resetBtn {
+    opacity: 1;
+}
+
+.select {
+    opacity: 1;
+}
